@@ -1,0 +1,19 @@
+# Default: short edge cache, allow browser to revalidate quickly.
+/*
+  Cache-Control: public, max-age=300, must-revalidate
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# PDFs: same filename gets overwritten on each Sunday push, so force revalidation.
+/*.pdf
+  Cache-Control: public, max-age=300, must-revalidate
+  Content-Type: application/pdf
+  Content-Disposition: inline
+
+# OG card images: stable per-recipient, can cache longer.
+/og/*
+  Cache-Control: public, max-age=86400
+
+# robots: never cache stale.
+/robots.txt
+  Cache-Control: public, max-age=60
