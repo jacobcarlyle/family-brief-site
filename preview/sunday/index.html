@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Jake — Sunday brief</title>
   <meta property="og:title"       content="Jake — Sunday brief">
-  <meta property="og:description" content="Weekly family brief — Mon 22 Jun 2026, 12:20 AEST">
+  <meta property="og:description" content="Weekly family brief — Mon 22 Jun 2026, 12:31 AEST">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://familybrief.carlyle.me/preview/sunday/">
   <meta property="og:image"       content="https://familybrief.carlyle.me/og/preview.png">
@@ -49,6 +49,9 @@
              font-size: 13px; font-weight: 600; margin: 6px 8px 0 0; }
     .z-act:disabled { opacity: 0.5; cursor: default; }
     .z-act.z-done { background: #16A34A; border-color: #16A34A; color: #FFFFFF; }
+    /* a reminder already ticked off in a previous visit (remembered locally) */
+    .z-row-done { opacity: 0.55; text-decoration: line-through; }
+    .z-row-done .z-act { text-decoration: none; }
     .z-needs-link { display: none; color: var(--muted); font-size: 13px;
                     margin: 16px 0 0; padding: 0 4px; }
   </style>
@@ -57,7 +60,7 @@
   <div class="wrap">
     <div class="card">
       <h1>Jake — Sunday brief</h1>
-      <div class="meta">Updated Mon 22 Jun 2026, 12:20 AEST</div>
+      <div class="meta">Updated Mon 22 Jun 2026, 12:31 AEST</div>
       <main>
         <!doctype html>
 <html lang="en">
@@ -175,7 +178,7 @@
     <td width="3" style="background:#2563EB;width:3px;font-size:0;">&nbsp;</td>
     <td style="padding:6px 10px;font-size:16px;" data-rcmd="Mark this reminder done: Rear door- fix bottom and install weather strip. (id 2855AE18-184B-4F93-BAE3-8166B51BE424)"><strong>OVERDUE (13 Jun)</strong> Rear door- fix bottom and install weather strip.</td>
   </tr>
-</table><p class="muted" style="font-size:14px;color:#6B7280;margin:6px 0 0 0;">7 upcoming items not shown — <a href="https://familybrief.carlyle.me/jake/sunday/" style="color:#2563EB;">view all on your briefing page →</a></p><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">Birthdays</p>
+</table><p class="muted" data-viewall="1" style="font-size:14px;color:#6B7280;margin:6px 0 0 0;">7 upcoming items not shown — <a href="https://familybrief.carlyle.me/jake/sunday/" style="color:#2563EB;">view all on your briefing page →</a></p><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">Birthdays</p>
 <p style="margin:0 0 4px 0;font-size:16px;color:#1F2937;"><span style="color:#2563EB;">□</span>&nbsp; Sun 5 Jul — Donald McDougall&#x27;s Birthday</p><p class="muted" style="margin:0 0 6px 14px;font-size:14px;color:#6B7280;font-style:italic;">Donald McDougall&#x27;s birthday Sunday — worth a quick message?</p><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">Family availability</p>
 <p class="muted" style="margin:0;font-size:14px;color:#6B7280;">Everyone's diary is clear this week.</p><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">Last week</p>
 <p class="muted" style="margin:0 0 6px 0;font-size:14px;color:#6B7280;">Ticked off last week:</p><p style="margin:0 0 4px 0;font-size:16px;color:#1F2937;"><span style="color:#2563EB;">✓</span>&nbsp; Fix: saved Cartesia voice ignored in family /zturn (hardcoded CARTESIA_VOICE override) <span class="muted" style="color:#6B7280;font-size:14px;">(Jake)</span></p><p style="margin:0 0 4px 0;font-size:16px;color:#1F2937;"><span style="color:#2563EB;">✓</span>&nbsp; Love Leanne <span class="muted" style="color:#6B7280;font-size:14px;">(Jake)</span></p></td></tr></table>
@@ -243,6 +246,21 @@
     // POST tapped commands to the sender's own Zonkey. Fragments are not sent
     // to any server and don't appear in access logs.
     var API = "https://api.carlyle.me/z/voice-command/text";
+
+    // Slug from the path (/<slug>/sunday/) scopes remembered actions per person.
+    var SLUG = location.pathname.split("/")[1] || "page";
+    var STORE_KEY = "wfb-done:" + SLUG;
+    function loadDone() {
+      try { return JSON.parse(localStorage.getItem(STORE_KEY) || "[]"); }
+      catch (e) { return []; }
+    }
+    function rememberDone(key) {
+      try {
+        var a = loadDone();
+        if (a.indexOf(key) === -1) { a.push(key); localStorage.setItem(STORE_KEY, JSON.stringify(a)); }
+      } catch (e) {}
+    }
+
     function readToken() {
       var h = (location.hash || "").replace(/^#/, "");
       var parts = h.split("&");
@@ -252,10 +270,36 @@
       }
       return "";
     }
-    // Inject "✓ Done" tick-off buttons into the brief body's reminder rows.
-    // This runs only on the mirror (the email has no JS), so the shared brief
-    // body stays button-free in email. Server-rendered .z-act buttons in the
-    // extras ("Everything open", events) are left untouched.
+
+    // A stable key per action so a reload reflects what you already did.
+    // Reminders key by id (so the same item in the brief list AND "Everything
+    // open" resolve together); events key by label.
+    function keyFor(btn) {
+      if (btn.hasAttribute("data-flag")) return "e:flag:" + (btn.getAttribute("data-label") || "");
+      var cmd = btn.getAttribute("data-cmd") || "";
+      if (cmd.indexOf("Mark this reminder done") === 0) {
+        var m = cmd.match(/\(id ([^)]+)\)\s*$/);
+        return "r:" + (m ? m[1] : cmd);
+      }
+      if (cmd.indexOf("WFB: all good with ") === 0) return "e:ok:" + cmd.slice(19);
+      return "c:" + cmd;
+    }
+
+    function markDone(btn) {
+      btn.textContent = "✓ Sent";
+      btn.classList.add("z-done");
+      btn.disabled = true;
+      var cmd = btn.getAttribute("data-cmd") || "";
+      if (cmd.indexOf("Mark this reminder done") === 0) {
+        var row = btn.closest ? btn.closest("[data-rcmd], .x-row") : null;
+        if (row) row.classList.add("z-row-done");
+      }
+    }
+
+    // 1) Inject "✓ Done" tick-off buttons into the brief body's reminder rows.
+    //    Runs only on the mirror (the email has no JS), so the shared brief
+    //    body stays button-free in email. Server-rendered .z-act buttons in the
+    //    extras ("Everything open", events) are left untouched.
     var rrows = document.querySelectorAll("[data-rcmd]");
     for (var r = 0; r < rrows.length; r++) {
       var rcmd = rrows[r].getAttribute("data-rcmd");
@@ -268,16 +312,35 @@
       rrows[r].appendChild(document.createTextNode(" "));
       rrows[r].appendChild(rb);
     }
-    var TOK = readToken();
+
+    // 2) Drop the "view all on your briefing page →" pointer — redundant here,
+    //    the full list ("Everything open") is on this same page.
+    var va = document.querySelectorAll("[data-viewall]");
+    for (var v = 0; v < va.length; v++) { if (va[v].parentNode) va[v].parentNode.removeChild(va[v]); }
+
     var buttons = document.querySelectorAll(".z-act");
+
+    // 3) Re-apply anything done on a previous visit so a reload doesn't ask
+    //    you to redo it (the item shows resolved / struck through).
+    var done = loadDone();
+    for (var d = 0; d < buttons.length; d++) {
+      if (done.indexOf(keyFor(buttons[d])) !== -1) markDone(buttons[d]);
+    }
+
+    // 4) Without a token we can't authenticate — disable the rest, show a hint.
+    var TOK = readToken();
     if (!TOK) {
-      if (buttons.length) {
-        for (var i = 0; i < buttons.length; i++) buttons[i].disabled = true;
+      var anyLive = false;
+      for (var i = 0; i < buttons.length; i++) {
+        if (!buttons[i].disabled) { buttons[i].disabled = true; anyLive = true; }
+      }
+      if (anyLive) {
         var hints = document.querySelectorAll(".z-needs-link");
         for (var j = 0; j < hints.length; j++) hints[j].style.display = "block";
       }
       return;
     }
+
     function send(btn, message) {
       var original = btn.textContent;
       btn.disabled = true;
@@ -286,14 +349,12 @@
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + TOK },
         body: JSON.stringify({ message: message })
-      }).then(function (r) {
-        if (r.ok) {
-          btn.textContent = "✓ Sent";
-          btn.classList.add("z-done");
-        } else {
+      }).then(function (resp) {
+        if (resp.ok) { rememberDone(keyFor(btn)); markDone(btn); }
+        else {
           btn.textContent = original;
           btn.disabled = false;
-          alert("Couldn't send that just now (" + r.status + "). Please try again.");
+          alert("Couldn't send that just now (" + resp.status + "). Please try again.");
         }
       }).catch(function () {
         btn.textContent = original;
@@ -301,6 +362,7 @@
         alert("Couldn't reach Zonkey just now. Please try again.");
       });
     }
+
     document.addEventListener("click", function (e) {
       var btn = e.target.closest ? e.target.closest(".z-act") : null;
       if (!btn || btn.disabled) return;
