@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Leanne — Wednesday brief</title>
   <meta property="og:title"       content="Leanne — Wednesday brief">
-  <meta property="og:description" content="Weekly family brief — Wed 17 Jun 2026, 15:29 AEST">
+  <meta property="og:description" content="Weekly family brief — Wed 24 Jun 2026, 14:01 AEST">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://familybrief.carlyle.me/leanne/wednesday/">
   <meta property="og:image"       content="https://familybrief.carlyle.me/og/leanne.png">
@@ -18,10 +18,12 @@
     html,body { margin: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
-      background: var(--bg); color: var(--ink); line-height: 1.55;
-      -webkit-font-smoothing: antialiased;
+      background: var(--bg); color: var(--ink); -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
     }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 16px; }
+    /* Match the brief body's 600px max so the card + extras line up with it
+       (no more wide-wrap vs narrow-email-table mismatch); fluid on mobile. */
+    .wrap { max-width: 600px; margin: 0 auto; padding: 16px; }
     .card { background: var(--card); border-top: 4px solid var(--accent);
             border-radius: 12px; padding: 24px 20px; margin-top: 16px;
             box-shadow: 0 1px 2px rgba(15,23,42,0.05); }
@@ -41,13 +43,26 @@
     .x-btn { display: inline-block; text-decoration: none; border: 1px solid var(--accent);
              color: var(--accent); border-radius: 8px; padding: 4px 10px;
              font-size: 13px; margin: 6px 8px 0 0; }
+    /* tap-to-act buttons (tick-off + ok/flag). Wired by the script below; the
+       per-person token rides the link fragment, never this HTML. */
+    .z-act { display: inline-block; cursor: pointer; -webkit-appearance: none;
+             background: transparent; border: 1px solid var(--accent);
+             color: var(--accent); border-radius: 8px; padding: 4px 10px;
+             font-size: 13px; font-weight: 600; margin: 6px 8px 0 0; }
+    .z-act:disabled { opacity: 0.5; cursor: default; }
+    .z-act.z-done { background: #16A34A; border-color: #16A34A; color: #FFFFFF; }
+    /* a reminder already ticked off in a previous visit (remembered locally) */
+    .z-row-done { opacity: 0.55; text-decoration: line-through; }
+    .z-row-done .z-act { text-decoration: none; }
+    .z-needs-link { display: none; color: var(--muted); font-size: 13px;
+                    margin: 16px 0 0; padding: 0 4px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
       <h1>Leanne — Wednesday brief</h1>
-      <div class="meta">Updated Wed 17 Jun 2026, 15:29 AEST</div>
+      <div class="meta">Updated Wed 24 Jun 2026, 14:01 AEST</div>
       <main>
         <!doctype html>
 <html lang="en">
@@ -80,15 +95,15 @@
   </style>
 </head>
 <body style="margin:0;padding:0;background:#FFFFFE;">
-<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">224BF3 service (lain to drop off) is the main diary item Tuesday 7:00 AM. · 4 useful picks</div><div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Cut down the big branch up the back on the big tree near the swing is the best next move due Sun 17 May. ·…</div><div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
 <!--[if mso | IE]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="main-wrap" style="background:#FFFFFE;">
   <tr><td align="center" style="padding:0;">
-    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
       <tr>
         <td class="main-td" style="background:#FFFFFE;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1F2937;font-size:16px;line-height:1.5;padding:0;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#7C3AED;padding:14px 24px;font-size:16px;font-weight:600;color:#FFFFFF;">Leanne — Mid-Week Update</td></tr></table>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:20px 24px 0 24px;"><p class="heading" style="font-size:18px;margin:0 0 8px 0;color:#1F2937;">Hi Leanne,</p><p style="margin:0 0 12px 0;padding:10px 14px;font-size:16px;border-left:3px solid #7C3AED;background:#F9FAFB;font-style:italic;">Main thread: 224BF3 service (lain to drop off) is the main diary item Tuesday 7:00 AM.</p><p style="margin:0 0 10px 0;font-size:16px;color:#1F2937;">🎯 <strong>Big rock:</strong> Cut down the big branch up the back on the big tree near the swing — due Sunday.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Already behind you today: Appointment: Checkup with Dr Collins.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Stalled: Design the entry gate to the property has been sitting open.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Move this along: Order engine mounts for Nelly’s van.</p></td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:20px 24px 0 24px;"><p class="heading" style="font-size:18px;margin:0 0 8px 0;color:#1F2937;">Hi Leanne,</p><p style="margin:0 0 12px 0;padding:10px 14px;font-size:16px;border-left:3px solid #7C3AED;background:#F9FAFB;font-style:italic;">Main thread: Cut down the big branch up the back on the big tree near the swing is the best next move due Sun 17 May.</p><p style="margin:0 0 10px 0;font-size:16px;color:#1F2937;">🎯 <strong>Big rock:</strong> Cut down the big branch up the back on the big tree near the swing — due Sunday.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Stalled: Design the entry gate to the property has been sitting open.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Move this along: Rear door- fix bottom and install weather strip..</p></td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#7C3AED;text-transform:uppercase;margin:24px 0 8px 0;">Useful reminders</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
   <tr>
@@ -108,19 +123,22 @@
 </table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
   <tr>
     <td width="3" style="background:#7C3AED;width:3px;font-size:0;">&nbsp;</td>
-    <td style="padding:6px 10px;font-size:16px;">Buy length of steel or aluminium angle to go under pedestal gate</td>
+    <td style="padding:6px 10px;font-size:16px;">Clean and paint more van wheels</td>
   </tr>
-</table><p class="muted" style="font-size:14px;color:#6B7280;margin:8px 0 0 0;">99 more open — <a href="https://familybrief.carlyle.me/leanne/wednesday/" style="color:#7C3AED;">see everything on your briefing page →</a></p></td></tr></table>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#7C3AED;text-transform:uppercase;margin:24px 0 8px 0;">This week at a glance</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="heading" style="background:rgba(124,58,237,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">MON 15 JUN</td></tr><tr><td style="padding:4px 10px 0 10px;font-size:14px;font-weight:700;color:#9CA3AF;">○ Leave: Isaac Antero Hartikainen · Leave: Sean William Clark · Leave: Christopher D Scott · Leave: Michael P Byrne</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">TUE 16 JUN</td></tr><tr><td style="padding:4px 10px 0 10px;font-size:14px;font-weight:700;color:#9CA3AF;">○ Leave: Isaac Antero Hartikainen · Leave: Sean William Clark · Leave: Christopher D Scott · Leave: Michael P Byrne</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">7:00 AM</span><span style="color:#7C3AED;">◆</span>&nbsp; 224BF3 service (lain to drop off)</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">WED 17 JUN</td></tr><tr><td style="padding:4px 10px 0 10px;font-size:14px;font-weight:700;color:#1F2937;">○ Leave: Isaac Antero Hartikainen · Leave: Sean William Clark · Leave: Christopher D Scott · Leave: Michael P Byrne</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">10:15 AM</span><span style="color:#7C3AED;">◆</span>&nbsp; Appointment: Checkup with Dr Collins</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">THU 18 JUN</td></tr><tr><td style="padding:4px 10px 0 10px;font-size:14px;font-weight:700;color:#1F2937;">○ Leave: Isaac Antero Hartikainen · Leave: Sean William Clark · Leave: Christopher D Scott · Leave: Michael P Byrne</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">9:00 AM</span><span style="color:#7C3AED;">◆</span>&nbsp; Service: Nelly’s van (354XKY)</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">10:15 AM</span><span style="color:#7C3AED;">◆</span>&nbsp; Lea physio</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">FRI 19 JUN</td></tr><tr><td style="padding:4px 10px 0 10px;font-size:14px;font-weight:700;color:#1F2937;">○ Leave: Isaac Antero Hartikainen · Leave: Sean William Clark · Leave: Christopher D Scott · Leave: Michael P Byrne · Leave: Sam Carlyle</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr></table>
-</td></tr></table>
+</table><p class="muted" data-viewall="1" style="font-size:14px;color:#6B7280;margin:8px 0 0 0;">99 more open — <a href="https://familybrief.carlyle.me/leanne/wednesday/" style="color:#7C3AED;">see everything on your briefing page →</a></p></td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#7C3AED;text-transform:uppercase;margin:24px 0 8px 0;">Weather</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="width:33%;padding:4px;"><div style="font-size:12px;font-weight:600;color:#1F2937;">Wed</div><div style="font-size:20px;">☁️</div><div style="font-size:11px;color:#6B7280;">Overcast</div><div style="font-size:14px;font-weight:600;">22°&nbsp;/<span class="muted" style="color:#6B7280;">13°</span></div></td><td align="center" style="width:33%;padding:4px;"><div style="font-size:12px;font-weight:600;color:#1F2937;">Thu</div><div style="font-size:20px;">☁️</div><div style="font-size:11px;color:#6B7280;">Overcast</div><div style="font-size:14px;font-weight:600;">21°&nbsp;/<span class="muted" style="color:#6B7280;">11°</span></div></td><td align="center" style="width:33%;padding:4px;"><div style="font-size:12px;font-weight:600;color:#1F2937;">Fri</div><div style="font-size:20px;">🌧</div><div style="font-size:11px;color:#6B7280;">Rain</div><div style="font-size:14px;font-weight:600;">23°&nbsp;/<span class="muted" style="color:#6B7280;">13°</span></div></td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#7C3AED;">Wed 24</div><div style="font-size:26px;line-height:1.3;">☀️</div><div style="font-size:11px;color:#6B7280;">Sunny</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">20°<span class="muted" style="color:#9CA3AF;font-weight:400;">/10°</span></div><div style="font-size:11px;color:#7C3AED;">0% rain</div></td><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#7C3AED;">Thu 25</div><div style="font-size:26px;line-height:1.3;">🌧</div><div style="font-size:11px;color:#6B7280;">Rain</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">20°<span class="muted" style="color:#9CA3AF;font-weight:400;">/11°</span></div><div style="font-size:11px;color:#7C3AED;">68% rain</div></td><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#7C3AED;">Fri 26</div><div style="font-size:26px;line-height:1.3;">🌧</div><div style="font-size:11px;color:#6B7280;">Rain</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">19°<span class="muted" style="color:#9CA3AF;font-weight:400;">/11°</span></div><div style="font-size:11px;color:#7C3AED;">45% rain</div></td><td valign="middle" style="width:25%;padding:6px 4px;"><div style="padding:3px 0;"><div style="font-size:11px;font-weight:600;color:#7C3AED;">Sat <span style="font-size:13px;">🌧</span></div><div style="font-size:11px;color:#1F2937;">18°/11° <span style="color:#7C3AED;">73%</span></div></div><div style="padding:3px 0;"><div style="font-size:11px;font-weight:600;color:#7C3AED;">Sun <span style="font-size:13px;">⛅</span></div><div style="font-size:11px;color:#1F2937;">18°/12° <span style="color:#7C3AED;">46%</span></div></div></td></tr></table>
+</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#7C3AED;text-transform:uppercase;margin:24px 0 8px 0;">Leave this week</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">MON</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">TUE</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">WED</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">THU</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">FRI</td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#6B7280;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Christopher S</div></td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#6B7280;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Isaac H</div></td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#6B7280;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Michael B</div></td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#DC2626;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Sam C</div></td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#6B7280;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Sean C</div></td></tr><tr><td colspan="1" style="padding:2px;font-size:0;">&nbsp;</td><td colspan="4" style="padding:2px;"><div style="background:#6B7280;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Donnelle C</div></td></tr></table>
+</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#7C3AED;text-transform:uppercase;margin:24px 0 8px 0;">This week at a glance</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="heading" style="background:rgba(124,58,237,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">MON 22 JUN</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">TUE 23 JUN</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">WED 24 JUN</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#7C3AED;">◆</span>&nbsp; Process Payroll</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">THU 25 JUN</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr><tr><td class="heading" style="background:rgba(124,58,237,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">FRI 26 JUN</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr></table>
 </td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td class="footer-td" style="padding:16px 24px;font-size:12px;color:#6B7280;background:#F9FAFB;">
-      Sent by openclaw &bull; Wed 17 Jun 2026 AEST
+      Sent by openclaw &bull; Wed 24 Jun 2026 AEST
     </td>
   </tr>
 </table>
@@ -134,129 +152,195 @@
 
       </main>
     </div>
+    <p class="z-needs-link">Open this from your private brief link (the one we
+      texted you) to tick items off or reply to events here.</p>
     <div class="card">
 <h2>Everything open</h2>
-<p class="x-meta">The email shows only what's overdue or due now — this is the full list behind it.</p>
-<details open><summary>Work — 39 open</summary>
-<div class="x-row"><span class="x-due">Mon 15 Jun</span> Order engine mounts for Nelly’s van</div>
-<div class="x-row"><span class="x-due">Tue 16 Jun</span> Ensure Keira has a working login for OurPost Dashboard</div>
-<div class="x-row"><span class="x-due">Wed 17 Jun</span> Update vehicle rego expiry dates</div>
-<div class="x-row">Acquire: Automotive‑leaning items (current or future upgrades)</div>
-<div class="x-row">Acquire: Hand tools</div>
-<div class="x-row">Acquire: House maintenance and safety</div>
-<div class="x-row">Acquire: Leaf blower</div>
-<div class="x-row">Acquire: Power tools</div>
-<div class="x-row">Acquire: Storage and organisation</div>
-<div class="x-row">Andy’s van</div>
-<div class="x-row">Assorted screws and wall plugs</div>
-<div class="x-row">Car seat covers</div>
-<div class="x-row">Chain for oil drum.</div>
-<div class="x-row">Charger for trolley</div>
-<div class="x-row">Charging cables</div>
-<div class="x-row">Check FIT2Work</div>
-<div class="x-row">Clean and paint more van wheels</div>
-<div class="x-row">Driver side running light</div>
-<div class="x-row">Floor jack (future upgrade)</div>
-<div class="x-row">General marking gear (pencils/markers; chalk line optional)</div>
-<div class="x-row">Get AI to Re-Write employee contracts.</div>
-<div class="x-row">Inflate tyres to full pressure</div>
-<div class="x-row">Investigate getting new flutes made for MS247</div>
-<div class="x-row">Jack stands (future upgrade)</div>
-<div class="x-row">Jayden</div>
-<div class="x-row">Karl</div>
-<div class="x-row">Look for campervan exhaust vent fan</div>
-<div class="x-row">Make App for delivery instructions for staff</div>
-<div class="x-row">Nelly</div>
-<div class="x-row">Optional: tool chest or trolley for garage storage</div>
-<div class="x-row">Portable toolbox (with top tray)</div>
-<div class="x-row">Put Dot4 pump bottle.</div>
-<div class="x-row">Put new fuel card when it arrives in the new van</div>
-<div class="x-row">Ratcheting multi‑bit screwdriver (optional but nice)</div>
-<div class="x-row">Small parts organisers for screws, plugs, nuts/bolts</div>
-<div class="x-row">Steering wheel covers</div>
-<div class="x-row">Strap for small fluids</div>
-<div class="x-row">Toll tags</div>
-<div class="x-row">Torque wrench (future upgrade)</div>
+<p class="x-meta">Your brief above highlights what's urgent — here's a fuller view of what's still open, by list. Tap ✓ Done to tick one off.</p>
+<details><summary>Work — 37 open</summary>
+<div class="x-row"><span class="x-due">Wed 17 Jun</span> Update vehicle rego expiry dates <button type="button" class="z-act" data-cmd="Mark this reminder done: Update vehicle rego expiry dates (id 254F2D2F-BA40-43D2-BED8-AD65922FBB66)">✓ Done</button></div>
+<div class="x-row">Acquire: Automotive‑leaning items (current or future upgrades) <button type="button" class="z-act" data-cmd="Mark this reminder done: Acquire: Automotive‑leaning items (current or future upgrades) (id 927D076F-DC6B-46B0-B01C-EDDF7CD40432)">✓ Done</button></div>
+<div class="x-row">Acquire: Hand tools <button type="button" class="z-act" data-cmd="Mark this reminder done: Acquire: Hand tools (id 22052869-02A3-45C8-8FF9-07885B71AFC4)">✓ Done</button></div>
+<div class="x-row">Acquire: House maintenance and safety <button type="button" class="z-act" data-cmd="Mark this reminder done: Acquire: House maintenance and safety (id 366572D7-8C93-4D81-9473-C55D2663E992)">✓ Done</button></div>
+<div class="x-row">Acquire: Leaf blower <button type="button" class="z-act" data-cmd="Mark this reminder done: Acquire: Leaf blower (id AB11EF54-9FCA-4AD9-8180-96226714540A)">✓ Done</button></div>
+<div class="x-row">Acquire: Power tools <button type="button" class="z-act" data-cmd="Mark this reminder done: Acquire: Power tools (id 4607CE22-887E-4AF5-8554-7637F80F8A6C)">✓ Done</button></div>
+<div class="x-row">Acquire: Storage and organisation <button type="button" class="z-act" data-cmd="Mark this reminder done: Acquire: Storage and organisation (id 373CC071-FBE2-42A9-B987-9F6450E2C432)">✓ Done</button></div>
+<div class="x-row">Andy’s van <button type="button" class="z-act" data-cmd="Mark this reminder done: Andy’s van (id 6A7043B8-96CA-447F-8327-8C6A0863D56D)">✓ Done</button></div>
+<div class="x-row x-meta">+29 more in this list</div>
 </details>
-<details open><summary>J&amp;L — 49 open</summary>
-<div class="x-row"><span class="x-due">Sat 16 May</span> Spray house and sheds with pesticide</div>
-<div class="x-row"><span class="x-due">Sat 16 May</span> Cut down the big branch up the back on the big tree near the swing</div>
-<div class="x-row"><span class="x-due">Fri 5 Jun</span> Leaves off shed</div>
-<div class="x-row"><span class="x-due">Sat 13 Jun</span> Rear door- fix bottom and install weather strip.</div>
-<div class="x-row"><span class="x-due">Tue 30 Jun</span> Reuben’s house prep – Master</div>
-<div class="x-row"><span class="x-due">Wed 29 Jul</span> Check Storage Shed Rat Baits tree</div>
-<div class="x-row"><span class="x-due">Sat 28 Jan</span> Home Solar Tubes</div>
-<div class="x-row">AirBNB Todo’s</div>
-<div class="x-row">Bathroom renovation</div>
-<div class="x-row">Bathroom: shower caddy</div>
-<div class="x-row">Bedroom 1: check with Reuben about study desks</div>
-<div class="x-row">Bedroom 1: check with Reuben on what he wants to keep</div>
-<div class="x-row">Bedroom 1: fix window sill</div>
-<div class="x-row">Bedroom 1: mount one skirting board</div>
-<div class="x-row">Blow leaves off Office Shed</div>
-<div class="x-row">Blow leaves off carport</div>
-<div class="x-row">Blow off driveway</div>
-<div class="x-row">Buy length of steel or aluminium angle to go under pedestal gate</div>
-<div class="x-row">CT110 Parts</div>
-<div class="x-row">CT110 exhaust</div>
-<div class="x-row">Clean around Aircon Units</div>
-<div class="x-row">Design for fabrication</div>
-<div class="x-row">Design the entry gate to the property</div>
-<div class="x-row">Door stopper</div>
-<div class="x-row">Electrical in new lounge</div>
-<div class="x-row">Entrance: architraves</div>
-<div class="x-row">Facebook Marketplace Sales</div>
-<div class="x-row">Fix draw</div>
-<div class="x-row">Foyer</div>
-<div class="x-row">Front Gate</div>
-<div class="x-row">Gallery rails for foyer</div>
-<div class="x-row">Home Galvanised Edging</div>
-<div class="x-row">Home Wheelie Bin Enclosure</div>
-<div class="x-row">Just buy some and start</div>
-<div class="x-row">Lamp for foyer</div>
-<div class="x-row">Look at buying life of Fred math books for Luca (grandkids)</div>
-<div class="x-row">Measure and size galvanised edging.</div>
-<div class="x-row">Order guest book for AirBNB</div>
-<div class="x-row">Reconfigure lighting in front shed.</div>
-<div class="x-row">Remove waste bricks</div>
-<div class="x-row">Screen on lounge window</div>
-<div class="x-row">Spare room: two window architraves</div>
-<div class="x-row">Spray and rinse shed with house wash.</div>
-<div class="x-row">Spray paint front fence</div>
-<div class="x-row">Storage for beds and mattresses.</div>
-<div class="x-row">Test all outlets for floorplan</div>
-<div class="x-row">Windows Install</div>
-<div class="x-row">iMac mounts</div>
-<div class="x-row">install all the new windows</div>
+<details><summary>J&amp;L — 51 open</summary>
+<div class="x-row"><span class="x-due">Sat 16 May</span> Spray house and sheds with pesticide <button type="button" class="z-act" data-cmd="Mark this reminder done: Spray house and sheds with pesticide (id 6C8606BE-F790-4768-AFA9-F195B34E835A)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Sat 16 May</span> Cut down the big branch up the back on the big tree near the swing <button type="button" class="z-act" data-cmd="Mark this reminder done: Cut down the big branch up the back on the big tree near the swing (id C76D1852-4944-4CCB-9390-1FCF8155E8A2)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Fri 5 Jun</span> Leaves off shed <button type="button" class="z-act" data-cmd="Mark this reminder done: Leaves off shed (id C2714C5D-4323-4A1C-9C8F-AE51F8F9AB2C)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Sat 13 Jun</span> Rear door- fix bottom and install weather strip. <button type="button" class="z-act" data-cmd="Mark this reminder done: Rear door- fix bottom and install weather strip. (id 2855AE18-184B-4F93-BAE3-8166B51BE424)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Tue 30 Jun</span> Reuben’s house prep – Master <button type="button" class="z-act" data-cmd="Mark this reminder done: Reuben’s house prep – Master (id 869AB2F0-8D10-4986-B24C-F0AE223857E9)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Wed 29 Jul</span> Check Storage Shed Rat Baits tree <button type="button" class="z-act" data-cmd="Mark this reminder done: Check Storage Shed Rat Baits tree (id 62968CBD-E679-497B-A16F-27F687730930)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Sat 28 Jan</span> Home Solar Tubes <button type="button" class="z-act" data-cmd="Mark this reminder done: Home Solar Tubes (id DAD39CF0-BCBE-48E7-8B83-004E1EA2C4F0)">✓ Done</button></div>
+<div class="x-row">AirBNB Todo’s <button type="button" class="z-act" data-cmd="Mark this reminder done: AirBNB Todo’s (id 75E2DDB5-C09D-4914-A00A-BDB070915923)">✓ Done</button></div>
+<div class="x-row x-meta">+43 more in this list</div>
 </details>
 <details><summary>Family — 15 open</summary>
-<div class="x-row">Book flights</div>
-<div class="x-row">Dungeon Crawler Carl</div>
-<div class="x-row">Freinds and Neighbours</div>
-<div class="x-row">Friends and neighbours.</div>
-<div class="x-row">Have a picnic on roundabout</div>
-<div class="x-row">Invincible</div>
-<div class="x-row">Keira check</div>
-<div class="x-row">Keira wants another family holiday.</div>
-<div class="x-row">Landman</div>
-<div class="x-row">Mayor of Kingstown.</div>
-<div class="x-row">Scarpetta</div>
-<div class="x-row">Take a photo of the 3 retards for canvas</div>
-<div class="x-row">The Legends</div>
-<div class="x-row">The PITT</div>
-<div class="x-row">The diplomat.</div>
+<div class="x-row">Book flights <button type="button" class="z-act" data-cmd="Mark this reminder done: Book flights (id 5C9630D2-7F12-468B-931F-E97A4D9940AB)">✓ Done</button></div>
+<div class="x-row">Dungeon Crawler Carl <button type="button" class="z-act" data-cmd="Mark this reminder done: Dungeon Crawler Carl (id 64D8DE79-82AC-4332-837C-AEB17A7E948A)">✓ Done</button></div>
+<div class="x-row">Freinds and Neighbours <button type="button" class="z-act" data-cmd="Mark this reminder done: Freinds and Neighbours (id AE1FE95E-A102-4940-8DA5-EE0BE374C98C)">✓ Done</button></div>
+<div class="x-row">Friends and neighbours. <button type="button" class="z-act" data-cmd="Mark this reminder done: Friends and neighbours. (id 7C52B84B-946D-4EBF-BC69-262D9BCD2252)">✓ Done</button></div>
+<div class="x-row">Have a picnic on roundabout <button type="button" class="z-act" data-cmd="Mark this reminder done: Have a picnic on roundabout (id D47F16CE-199F-4BEA-9D13-5EDBC796B3D4)">✓ Done</button></div>
+<div class="x-row">Invincible <button type="button" class="z-act" data-cmd="Mark this reminder done: Invincible (id AD7558E4-4321-4106-AFA2-65ED7238B435)">✓ Done</button></div>
+<div class="x-row">Keira check <button type="button" class="z-act" data-cmd="Mark this reminder done: Keira check (id C59F3EE8-AC02-4D04-AC96-D21F5F086791)">✓ Done</button></div>
+<div class="x-row">Keira wants another family holiday. <button type="button" class="z-act" data-cmd="Mark this reminder done: Keira wants another family holiday. (id 14348454-3422-447C-9601-8AEFF1A48076)">✓ Done</button></div>
+<div class="x-row x-meta">+7 more in this list</div>
 </details>
 </div>
 <div class="card">
-<h2>Quick replies</h2>
-<p class="x-meta">Key shared events this week — one tap to reply.</p>
-<div class="x-row"><span class="x-meta">Tue 16 Jun · 7:00 AM</span> 224BF3 service (lain to drop off)<br><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20224BF3%20service%20%28lain%20to%20drop%20off%29%20%28Tue%2016%20Jun%29%20%E2%80%94%20Leanne&amp;body=All%20good%20%E2%80%94%20I%27m%20across%20224BF3%20service%20%28lain%20to%20drop%20off%29%20on%20Tue%2016%20Jun.">✅ All good</a><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20224BF3%20service%20%28lain%20to%20drop%20off%29%20%28Tue%2016%20Jun%29%20%E2%80%94%20Leanne&amp;body=Heads%20up%20%E2%80%94%20I%20have%20an%20issue%20with%20224BF3%20service%20%28lain%20to%20drop%20off%29%20on%20Tue%2016%20Jun%3A%20">⚠️ Flag an issue</a></div>
-<div class="x-row"><span class="x-meta">Wed 17 Jun · 10:15 AM</span> Appointment: Checkup with Dr Collins<br><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20Appointment%3A%20Checkup%20with%20Dr%20Collins%20%28Wed%2017%20Jun%29%20%E2%80%94%20Leanne&amp;body=All%20good%20%E2%80%94%20I%27m%20across%20Appointment%3A%20Checkup%20with%20Dr%20Collins%20on%20Wed%2017%20Jun.">✅ All good</a><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20Appointment%3A%20Checkup%20with%20Dr%20Collins%20%28Wed%2017%20Jun%29%20%E2%80%94%20Leanne&amp;body=Heads%20up%20%E2%80%94%20I%20have%20an%20issue%20with%20Appointment%3A%20Checkup%20with%20Dr%20Collins%20on%20Wed%2017%20Jun%3A%20">⚠️ Flag an issue</a></div>
-<div class="x-row"><span class="x-meta">Thu 18 Jun · 9:00 AM</span> Service: Nelly’s van (354XKY)<br><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20Service%3A%20Nelly%E2%80%99s%20van%20%28354XKY%29%20%28Thu%2018%20Jun%29%20%E2%80%94%20Leanne&amp;body=All%20good%20%E2%80%94%20I%27m%20across%20Service%3A%20Nelly%E2%80%99s%20van%20%28354XKY%29%20on%20Thu%2018%20Jun.">✅ All good</a><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20Service%3A%20Nelly%E2%80%99s%20van%20%28354XKY%29%20%28Thu%2018%20Jun%29%20%E2%80%94%20Leanne&amp;body=Heads%20up%20%E2%80%94%20I%20have%20an%20issue%20with%20Service%3A%20Nelly%E2%80%99s%20van%20%28354XKY%29%20on%20Thu%2018%20Jun%3A%20">⚠️ Flag an issue</a></div>
-<div class="x-row"><span class="x-meta">Thu 18 Jun · 10:15 AM</span> Lea physio<br><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20Lea%20physio%20%28Thu%2018%20Jun%29%20%E2%80%94%20Leanne&amp;body=All%20good%20%E2%80%94%20I%27m%20across%20Lea%20physio%20on%20Thu%2018%20Jun.">✅ All good</a><a class="x-btn" href="mailto:jacob@carlyle.com.au?subject=Re%3A%20Lea%20physio%20%28Thu%2018%20Jun%29%20%E2%80%94%20Leanne&amp;body=Heads%20up%20%E2%80%94%20I%20have%20an%20issue%20with%20Lea%20physio%20on%20Thu%2018%20Jun%3A%20">⚠️ Flag an issue</a></div>
+<h2>Shared events — tap to confirm</h2>
+<p class="x-meta">Tap to let Zonkey know you're across it, or flag a problem (you'll be asked what's wrong, and Zonkey passes it on).</p>
+<div class="x-row"><span class="x-meta">Wed 24 Jun · All day</span> Process Payroll<br><button type="button" class="z-act" data-cmd="WFB: all good with Process Payroll (Wed 24 Jun)">✅ All good</button><button type="button" class="z-act" data-flag="1" data-label="Process Payroll (Wed 24 Jun)">⚠️ Flag an issue</button></div>
 </div>
 
     <footer>Generated automatically by OpenClaw · weekly-family-briefing</footer>
   </div>
+  <script>
+  (function () {
+    // The per-person Companion token rides the private link fragment
+    // (#k=<token>) — never the published HTML. Read it from location.hash and
+    // POST tapped commands to the sender's own Zonkey. Fragments are not sent
+    // to any server and don't appear in access logs.
+    var API = "https://api.carlyle.me/z/voice-command/text";
+
+    // Slug from the path (/<slug>/<mode>/) scopes remembered actions per person.
+    var SLUG = location.pathname.split("/")[1] || "page";
+    var STORE_KEY = "wfb-done:" + SLUG;
+    function loadDone() {
+      try { return JSON.parse(localStorage.getItem(STORE_KEY) || "[]"); }
+      catch (e) { return []; }
+    }
+    function rememberDone(key) {
+      try {
+        var a = loadDone();
+        if (a.indexOf(key) === -1) { a.push(key); localStorage.setItem(STORE_KEY, JSON.stringify(a)); }
+      } catch (e) {}
+    }
+
+    function readToken() {
+      var h = (location.hash || "").replace(/^#/, "");
+      var parts = h.split("&");
+      for (var i = 0; i < parts.length; i++) {
+        var kv = parts[i].split("=");
+        if (kv[0] === "k" && kv[1]) { try { return decodeURIComponent(kv[1]); } catch (e) { return kv[1]; } }
+      }
+      return "";
+    }
+
+    // A stable key per action so a reload reflects what you already did.
+    // Reminders key by id (so the same item in the brief list AND "Everything
+    // open" resolve together); events key by label.
+    function keyFor(btn) {
+      if (btn.hasAttribute("data-flag")) return "e:flag:" + (btn.getAttribute("data-label") || "");
+      var cmd = btn.getAttribute("data-cmd") || "";
+      if (cmd.indexOf("Mark this reminder done") === 0) {
+        var m = cmd.match(/\(id ([^)]+)\)\s*$/);
+        return "r:" + (m ? m[1] : cmd);
+      }
+      if (cmd.indexOf("WFB: all good with ") === 0) return "e:ok:" + cmd.slice(19);
+      return "c:" + cmd;
+    }
+
+    function markDone(btn) {
+      btn.textContent = "✓ Sent";
+      btn.classList.add("z-done");
+      btn.disabled = true;
+      var cmd = btn.getAttribute("data-cmd") || "";
+      if (cmd.indexOf("Mark this reminder done") === 0) {
+        var row = btn.closest ? btn.closest("[data-rcmd], .x-row") : null;
+        if (row) row.classList.add("z-row-done");
+      }
+    }
+
+    // 1) Inject "✓ Done" tick-off buttons into the brief body's reminder rows.
+    //    Runs only on the mirror (the email has no JS), so the shared brief
+    //    body stays button-free in email. Server-rendered .z-act buttons in the
+    //    extras ("Everything open", events) are left untouched.
+    var rrows = document.querySelectorAll("[data-rcmd]");
+    for (var r = 0; r < rrows.length; r++) {
+      var rcmd = rrows[r].getAttribute("data-rcmd");
+      if (!rcmd) continue;
+      var rb = document.createElement("button");
+      rb.type = "button";
+      rb.className = "z-act";
+      rb.setAttribute("data-cmd", rcmd);
+      rb.textContent = "✓ Done";
+      rrows[r].appendChild(document.createTextNode(" "));
+      rrows[r].appendChild(rb);
+    }
+
+    // 2) Drop the "view all on your briefing page →" pointer — redundant here,
+    //    the full list ("Everything open") is on this same page.
+    var va = document.querySelectorAll("[data-viewall]");
+    for (var v = 0; v < va.length; v++) { if (va[v].parentNode) va[v].parentNode.removeChild(va[v]); }
+
+    var buttons = document.querySelectorAll(".z-act");
+
+    // 3) Re-apply anything done on a previous visit so a reload doesn't ask
+    //    you to redo it (the item shows resolved / struck through).
+    var done = loadDone();
+    for (var d = 0; d < buttons.length; d++) {
+      if (done.indexOf(keyFor(buttons[d])) !== -1) markDone(buttons[d]);
+    }
+
+    // 4) Without a token we can't authenticate — disable the rest, show a hint.
+    var TOK = readToken();
+    if (!TOK) {
+      var anyLive = false;
+      for (var i = 0; i < buttons.length; i++) {
+        if (!buttons[i].disabled) { buttons[i].disabled = true; anyLive = true; }
+      }
+      if (anyLive) {
+        var hints = document.querySelectorAll(".z-needs-link");
+        for (var j = 0; j < hints.length; j++) hints[j].style.display = "block";
+      }
+      return;
+    }
+
+    function send(btn, message) {
+      var original = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+      fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + TOK },
+        body: JSON.stringify({ message: message })
+      }).then(function (resp) {
+        if (resp.ok) { rememberDone(keyFor(btn)); markDone(btn); }
+        else {
+          btn.textContent = original;
+          btn.disabled = false;
+          alert("Couldn't send that just now (" + resp.status + "). Please try again.");
+        }
+      }).catch(function () {
+        btn.textContent = original;
+        btn.disabled = false;
+        alert("Couldn't reach Zonkey just now. Please try again.");
+      });
+    }
+
+    document.addEventListener("click", function (e) {
+      var btn = e.target.closest ? e.target.closest(".z-act") : null;
+      if (!btn || btn.disabled) return;
+      if (btn.hasAttribute("data-flag")) {
+        var label = btn.getAttribute("data-label") || "this event";
+        var note = window.prompt("What's the issue with " + label + "?");
+        if (!note) return;                       // cancelled / empty → no-op
+        send(btn, "WFB: flag " + label + " — " + note);
+      } else {
+        var cmd = btn.getAttribute("data-cmd");
+        if (!cmd) return;
+        // Tick-off completes a real reminder — confirm first.
+        if (cmd.indexOf("Mark this reminder done") === 0 &&
+            !window.confirm("Mark this reminder done?")) return;
+        send(btn, cmd);
+      }
+    });
+  })();
+  </script>
 </body>
 </html>
