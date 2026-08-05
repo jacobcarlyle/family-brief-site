@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Jake — Wednesday brief</title>
   <meta property="og:title"       content="Jake — Wednesday brief">
-  <meta property="og:description" content="Weekly family brief — Wed 29 Jul 2026, 13:00 AEST">
+  <meta property="og:description" content="Weekly family brief — Wed 05 Aug 2026, 13:00 AEST">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://familybrief.carlyle.me/jake/wednesday/">
   <meta property="og:image"       content="https://familybrief.carlyle.me/og/jake.png">
@@ -65,6 +65,12 @@
     /* inline status text next to a button (replaces alert()) */
     .z-status { display: inline-block; margin-left: 8px; font-size: 13px;
                 color: #DC2626; }
+    /* live-refresh notice + changed-leave block (see liveRefresh in the script) */
+    .z-live { color: #16A34A; font-size: 13px; margin: -8px 0 16px; }
+    .z-live-leave { border-left: 3px solid var(--accent); background: #F9FAFB;
+                    padding: 8px 12px; margin: 8px 0 12px; font-size: 14px;
+                    color: #1F2937; border-radius: 0 6px 6px 0; }
+    .z-live-leave strong { display: block; margin-bottom: 4px; }
     /* inline flag-note row (replaces prompt()) */
     .z-flagbox { margin: 8px 0 4px; }
     .z-flagbox input { width: 100%; max-width: 320px; padding: 6px 10px;
@@ -76,7 +82,7 @@
   <div class="wrap">
     <div class="card">
       <h1>Jake — Wednesday brief</h1>
-      <div class="meta">Updated Wed 29 Jul 2026, 13:00 AEST</div>
+      <div class="meta">Updated Wed 05 Aug 2026, 13:00 AEST</div>
       <main>
         
 <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Daryl and Karen away is the main diary item Sunday 12:00 AM. · 4 useful picks</div><div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
@@ -88,14 +94,9 @@
         <td class="main-td" style="background:#FFFFFE;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1F2937;font-size:16px;line-height:1.5;padding:0;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#2563EB;padding:14px 24px;font-size:16px;font-weight:600;color:#FFFFFF;">Jake — Mid-Week Update</td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" data-viewall="1"><tr><td style="background:#F3F4F6;padding:8px 24px;font-size:13px;color:#4B5563;">📱 <a href="https://familybrief.carlyle.me/jake/wednesday/" style="color:#2563EB;font-weight:600;">Open the interactive version</a> — tick things off &amp; confirm events</td></tr></table>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:20px 24px 0 24px;"><p class="heading" style="font-size:18px;margin:0 0 8px 0;color:#1F2937;">Morning Jake,</p><p style="margin:0 0 12px 0;padding:10px 14px;font-size:16px;border-left:3px solid #2563EB;background:#F9FAFB;font-style:italic;">Focus: Daryl and Karen away is the main diary item Sunday 12:00 AM.</p><p style="margin:0 0 10px 0;font-size:16px;color:#1F2937;">🎯 <strong>Big rock:</strong> Love Leanne — due Sunday.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Stalled: Design the entry gate to the property has been sitting open.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Move this along: Verify Mini App initData after Telegram hardening (~20 Jul); remove signature dual-try hedge.</p></td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:20px 24px 0 24px;"><p class="heading" style="font-size:18px;margin:0 0 8px 0;color:#1F2937;"><span data-greet="1">Afternoon</span> Jake,</p><p style="margin:0 0 12px 0;padding:10px 14px;font-size:16px;border-left:3px solid #2563EB;background:#F9FAFB;font-style:italic;">Focus: Daryl and Karen away is the main diary item Sunday 12:00 AM.</p><p style="margin:0 0 10px 0;font-size:16px;color:#1F2937;">🎯 <strong>Big rock:</strong> Blow leaves off storage sheds — due Sunday.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Stalled: Design the entry gate to the property has been sitting open.</p><p class="muted" style="color:#4B5563;font-size:14px;margin:0 0 6px 0;">Move this along: Find My poller: confirm first AUTOMATED */10 run + watch frozen-trigger alarm.</p></td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">Useful reminders</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
-  <tr>
-    <td width="3" style="background:#2563EB;width:3px;font-size:0;">&nbsp;</td>
-    <td style="padding:6px 10px;font-size:16px;" data-rcmd="Mark this reminder done: Love Leanne (id E1E0AEDB-3F52-495E-A4EB-4B3A14DD7E7B)"><strong>Sun 26 Jul</strong> Love Leanne</td>
-  </tr>
-</table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
   <tr>
     <td width="3" style="background:#2563EB;width:3px;font-size:0;">&nbsp;</td>
     <td style="padding:6px 10px;font-size:16px;" data-rcmd="Mark this reminder done: Blow leaves off storage sheds (id CE4A6E2A-7DD8-4FE6-B62A-B306B2F68368)"><strong>Sun 17 May</strong> Blow leaves off storage sheds</td>
@@ -103,7 +104,12 @@
 </table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
   <tr>
     <td width="3" style="background:#2563EB;width:3px;font-size:0;">&nbsp;</td>
-    <td style="padding:6px 10px;font-size:16px;" data-rcmd="Mark this reminder done: Check Storage Shed Rat Baits tree (id 62968CBD-E679-497B-A16F-27F687730930)"><strong>Thu 30 Jul</strong> Check Storage Shed Rat Baits tree</td>
+    <td style="padding:6px 10px;font-size:16px;" data-rcmd="Mark this reminder done: Spray house and sheds with pesticide (id 6C8606BE-F790-4768-AFA9-F195B34E835A)"><strong>Sun 17 May</strong> Spray house and sheds with pesticide</td>
+  </tr>
+</table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
+  <tr>
+    <td width="3" style="background:#2563EB;width:3px;font-size:0;">&nbsp;</td>
+    <td style="padding:6px 10px;font-size:16px;" data-rcmd="Mark this reminder done: OHS super app: watch actions-mirror compare trend; ~08-09 decide recentDone on mirror (id 503A8A1E-F72F-483B-954F-F32FB9C9B481)"><strong>Sun 9 Aug</strong> OHS super app: watch actions-mirror compare trend; ~08-09 decide recentDone on mirror</td>
   </tr>
 </table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
   <tr>
@@ -112,18 +118,18 @@
   </tr>
 </table><p class="muted" data-viewall="1" style="font-size:14px;color:#6B7280;margin:8px 0 0 0;"><a href="https://familybrief.carlyle.me/jake/wednesday/" style="color:#2563EB;">See your full list →</a></p></td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">Weather</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#2563EB;">Wed 29</div><div style="font-size:26px;line-height:1.3;">☁️</div><div style="font-size:11px;color:#6B7280;">Overcast</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">22°<span class="muted" style="color:#9CA3AF;font-weight:400;">/11°</span></div><div style="font-size:11px;color:#2563EB;">12% rain</div></td><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#2563EB;">Thu 30</div><div style="font-size:26px;line-height:1.3;">☁️</div><div style="font-size:11px;color:#6B7280;">Overcast</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">20°<span class="muted" style="color:#9CA3AF;font-weight:400;">/9°</span></div><div style="font-size:11px;color:#2563EB;">4% rain</div></td><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#2563EB;">Fri 31</div><div style="font-size:26px;line-height:1.3;">🌧</div><div style="font-size:11px;color:#6B7280;">Rain</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">19°<span class="muted" style="color:#9CA3AF;font-weight:400;">/9°</span></div><div style="font-size:11px;color:#2563EB;">18% rain</div></td><td valign="middle" style="width:25%;padding:6px 4px;"><div style="padding:3px 0;"><div style="font-size:11px;font-weight:600;color:#2563EB;">Sat <span style="font-size:13px;">🌧</span></div><div style="font-size:11px;color:#1F2937;">20°/10° <span style="color:#2563EB;">44%</span></div></div><div style="padding:3px 0;"><div style="font-size:11px;font-weight:600;color:#2563EB;">Sun <span style="font-size:13px;">🌧</span></div><div style="font-size:11px;color:#1F2937;">19°/10° <span style="color:#2563EB;">40%</span></div></div></td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#2563EB;">Wed 5</div><div style="font-size:26px;line-height:1.3;">🌤</div><div style="font-size:11px;color:#6B7280;">Mostly clear</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">23°<span class="muted" style="color:#9CA3AF;font-weight:400;">/9°</span></div><div style="font-size:11px;color:#2563EB;">0% rain</div></td><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#2563EB;">Thu 6</div><div style="font-size:26px;line-height:1.3;">☁️</div><div style="font-size:11px;color:#6B7280;">Overcast</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">21°<span class="muted" style="color:#9CA3AF;font-weight:400;">/10°</span></div><div style="font-size:11px;color:#2563EB;">0% rain</div></td><td align="center" valign="top" style="width:25%;padding:6px 4px;"><div style="font-size:13px;font-weight:600;color:#2563EB;">Fri 7</div><div style="font-size:26px;line-height:1.3;">☀️</div><div style="font-size:11px;color:#6B7280;">Sunny</div><div style="font-size:16px;font-weight:600;color:#1F2937;margin-top:2px;">21°<span class="muted" style="color:#9CA3AF;font-weight:400;">/10°</span></div><div style="font-size:11px;color:#2563EB;">0% rain</div></td><td valign="middle" style="width:25%;padding:6px 4px;"><div style="padding:3px 0;"><div style="font-size:11px;font-weight:600;color:#2563EB;">Sat <span style="font-size:13px;">🌧</span></div><div style="font-size:11px;color:#1F2937;">20°/10° <span style="color:#2563EB;">2%</span></div></div><div style="padding:3px 0;"><div style="font-size:11px;font-weight:600;color:#2563EB;">Sun <span style="font-size:13px;">☁️</span></div><div style="font-size:11px;color:#1F2937;">21°/10° <span style="color:#2563EB;">2%</span></div></div></td></tr></table>
 </td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">Leave this week</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">MON</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">TUE</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">WED</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">THU</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">FRI</td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#10B981;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Michael B</div></td></tr><tr><td colspan="4" style="padding:2px;font-size:0;">&nbsp;</td><td colspan="1" style="padding:2px;"><div style="background:#10B981;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Nick S</div></td></tr></table>
+<span data-leave-sig="d7188ad24b80"></span><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">MON</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">TUE</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">WED</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">THU</td><td align="center" style="width:20%;padding:2px;font-size:12px;font-weight:600;color:#6B7280;">FRI</td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#F59E0B;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">David D</div></td></tr><tr><td colspan="5" style="padding:2px;"><div style="background:#10B981;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Michael B</div></td></tr><tr><td colspan="4" style="padding:2px;font-size:0;">&nbsp;</td><td colspan="1" style="padding:2px;"><div style="background:#059669;color:#FFFFFF;border-radius:999px;padding:2px 8px;font-size:12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Kye C</div></td></tr></table>
 </td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 24px 0 24px;"><p class="heading" style="font-size:12px;font-weight:600;letter-spacing:0.08em;color:#2563EB;text-transform:uppercase;margin:24px 0 8px 0;">This week at a glance</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:rgba(37,99,235,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">MON 27 JUL</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; AC-576 · Due soon: Regular Servicing — 695 EL4</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">□</span>&nbsp; Nick Peter Harradine Shalless&#x27;s Birthday</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td style="background:rgba(37,99,235,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">TUE 28 JUL</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Dad or Sam Russell Island</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(37,99,235,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">WED 29 JUL</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; AC-565 · Barn door glass &amp; vinyl repair — 693 EL4 — 2026-07-09</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Dad AND Sam Macleay Island</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Keira EL4 van: rear barn door window</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Sam CX3 windscreen (A5AM)</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Van with Rego 224BF3: New windscreen installation (Lane)</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(37,99,235,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">THU 30 JUL</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr><tr><td class="heading" style="background:rgba(37,99,235,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">FRI 31 JUL</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:rgba(37,99,235,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">MON 3 AUG</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; AC-592 · OVERDUE: Regular Servicing — 399 XMW</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; AC-593 · OVERDUE: Regular Servicing — 461 KEP</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td style="background:rgba(37,99,235,0.04);padding:6px 10px;font-size:18px;font-weight:600;color:#9CA3AF;">TUE 4 AUG</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; AC-612 · Decide: Byrne + Mcdougall lost AusPost clearance</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#9CA3AF;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">□</span>&nbsp; Keira Carlyle&#x27;s Birthday</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(37,99,235,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">WED 5 AUG</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; AC-586 · Book van in for glass replacement — 224 BF3 (IS-60)</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Keira EL4 van: rear barn door window</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Process Payroll</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Sam CX3 windscreen (A5AM)</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Van with Rego 224BF3: New windscreen installation (Lane)</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr><tr><td class="heading" style="background:rgba(37,99,235,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">THU 6 AUG</td></tr><tr><td class="muted" style="padding:6px 10px 10px 10px;font-size:16px;color:#6B7280;font-style:italic;">— nothing on</td></tr><tr><td class="heading" style="background:rgba(37,99,235,0.10);padding:6px 10px;font-size:18px;font-weight:600;color:#1F2937;">FRI 7 AUG</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">◆</span>&nbsp; Kye away on holidays</td></tr><tr><td style="padding:3px 10px;font-size:16px;color:#1F2937;"><span class="muted" style="color:#6B7280;font-size:14px;display:inline-block;width:76px;">All day</span><span style="color:#2563EB;">□</span>&nbsp; Lain Thomas Martin&#x27;s Birthday</td></tr><tr><td style="font-size:0;height:6px;">&nbsp;</td></tr></table>
 </td></tr></table>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td class="footer-td" style="padding:16px 24px;font-size:12px;color:#6B7280;background:#F9FAFB;">
-      Sent by openclaw &bull; Wed 29 Jul 2026 AEST
+      Sent by openclaw &bull; Wed 05 Aug 2026 AEST
     </td>
   </tr>
 </table>
@@ -142,16 +148,16 @@
     <div class="card">
 <h2>Everything open</h2>
 <p class="x-meta">Your brief above highlights what's urgent — here's a fuller view of what's still open, by list. Tap ✓ Done to tick one off.</p>
-<details><summary>Personal — 99 open</summary>
+<details><summary>Personal — 118 open</summary>
 <div class="x-row"><span class="x-due">Sun 17 May</span> Blow leaves off storage sheds <button type="button" class="z-act" data-cmd="Mark this reminder done: Blow leaves off storage sheds (id CE4A6E2A-7DD8-4FE6-B62A-B306B2F68368)">✓ Done</button></div>
 <div class="x-row"><span class="x-due">Mon 20 Jul</span> Verify Mini App initData after Telegram hardening (~20 Jul); remove signature dual-try hedge <button type="button" class="z-act" data-cmd="Mark this reminder done: Verify Mini App initData after Telegram hardening (~20 Jul); remove signature dual-try hedge (id F3F03E0D-DD91-4E47-9332-6675EB968C8E)">✓ Done</button></div>
 <div class="x-row"><span class="x-due">Wed 22 Jul</span> Wed 22 Jul live-verify: Sean SMS ask via the deterministic path + first worded/photo check reply <button type="button" class="z-act" data-cmd="Mark this reminder done: Wed 22 Jul live-verify: Sean SMS ask via the deterministic path + first worded/photo check reply (id 7CE0FA66-5F4A-4D5D-B3D1-619F2E7C427D)">✓ Done</button></div>
-<div class="x-row"><span class="x-due">Sun 26 Jul</span> Get some quotes for tree trimming <button type="button" class="z-act" data-cmd="Mark this reminder done: Get some quotes for tree trimming (id DD66CB12-064A-4429-A3B4-DEC8AAA3EB2F)">✓ Done</button></div>
-<div class="x-row"><span class="x-due">Sun 26 Jul</span> Love Leanne <button type="button" class="z-act" data-cmd="Mark this reminder done: Love Leanne (id E1E0AEDB-3F52-495E-A4EB-4B3A14DD7E7B)">✓ Done</button></div>
-<div class="x-row">#16 field standardisation pass <button type="button" class="z-act" data-cmd="Mark this reminder done: #16 field standardisation pass (id 4941DF9E-B6FF-478D-BA49-827D6D7050E1)">✓ Done</button></div>
-<div class="x-row">#16 field standardisation pass (controlled vocab + free-text note) <button type="button" class="z-act" data-cmd="Mark this reminder done: #16 field standardisation pass (controlled vocab + free-text note) (id BFF72E1E-7A35-4849-BDD3-2FBEC0EAB4F2)">✓ Done</button></div>
-<div class="x-row">/admin Guides: fill rule bodies + seed locker brands <button type="button" class="z-act" data-cmd="Mark this reminder done: /admin Guides: fill rule bodies + seed locker brands (id 2C5EC661-B245-4B85-9116-EE842BCD1278)">✓ Done</button></div>
-<div class="x-row x-meta">+91 more in this list</div>
+<div class="x-row"><span class="x-due">Mon 3 Aug</span> OHS: Monday check — webhook deliveries + actions-mirror after first live weekday <button type="button" class="z-act" data-cmd="Mark this reminder done: OHS: Monday check — webhook deliveries + actions-mirror after first live weekday (id EE7AAC74-8DDA-47BB-8242-A0188D209776)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Tue 4 Aug</span> Find My poller: confirm first AUTOMATED */10 run + watch frozen-trigger alarm <button type="button" class="z-act" data-cmd="Mark this reminder done: Find My poller: confirm first AUTOMATED */10 run + watch frozen-trigger alarm (id 03871E83-B932-4298-BD1E-FFE81D44889A)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Sun 9 Aug</span> OHS super app: watch actions-mirror compare trend; ~08-09 decide recentDone on mirror <button type="button" class="z-act" data-cmd="Mark this reminder done: OHS super app: watch actions-mirror compare trend; ~08-09 decide recentDone on mirror (id 503A8A1E-F72F-483B-954F-F32FB9C9B481)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Sun 16 Aug</span> Love Leanne <button type="button" class="z-act" data-cmd="Mark this reminder done: Love Leanne (id E1E0AEDB-3F52-495E-A4EB-4B3A14DD7E7B)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Tue 25 Aug</span> Trim agents/ohs/TOOLS.md below the 20K boot-inject cap <button type="button" class="z-act" data-cmd="Mark this reminder done: Trim agents/ohs/TOOLS.md below the 20K boot-inject cap (id DEB61167-AE84-479C-A998-C445541E01B6)">✓ Done</button></div>
+<div class="x-row x-meta">+110 more in this list</div>
 </details>
 <details><summary>Work — 23 open</summary>
 <div class="x-row">Acquire: Automotive‑leaning items (current or future upgrades) <button type="button" class="z-act" data-cmd="Mark this reminder done: Acquire: Automotive‑leaning items (current or future upgrades) (id 927D076F-DC6B-46B0-B01C-EDDF7CD40432)">✓ Done</button></div>
@@ -167,7 +173,7 @@
 <details><summary>J&amp;L — 51 open</summary>
 <div class="x-row"><span class="x-due">Sun 17 May</span> Spray house and sheds with pesticide <button type="button" class="z-act" data-cmd="Mark this reminder done: Spray house and sheds with pesticide (id 6C8606BE-F790-4768-AFA9-F195B34E835A)">✓ Done</button></div>
 <div class="x-row"><span class="x-due">Sat 18 Jul</span> Leaves off shed <button type="button" class="z-act" data-cmd="Mark this reminder done: Leaves off shed (id C2714C5D-4323-4A1C-9C8F-AE51F8F9AB2C)">✓ Done</button></div>
-<div class="x-row"><span class="x-due">Thu 30 Jul</span> Check Storage Shed Rat Baits tree <button type="button" class="z-act" data-cmd="Mark this reminder done: Check Storage Shed Rat Baits tree (id 62968CBD-E679-497B-A16F-27F687730930)">✓ Done</button></div>
+<div class="x-row"><span class="x-due">Thu 1 Oct</span> Check Storage Shed Rat Baits tree <button type="button" class="z-act" data-cmd="Mark this reminder done: Check Storage Shed Rat Baits tree (id 62968CBD-E679-497B-A16F-27F687730930)">✓ Done</button></div>
 <div class="x-row"><span class="x-due">Sun 29 Jan</span> Home Solar Tubes <button type="button" class="z-act" data-cmd="Mark this reminder done: Home Solar Tubes (id DAD39CF0-BCBE-48E7-8B83-004E1EA2C4F0)">✓ Done</button></div>
 <div class="x-row">3D PRINTING <button type="button" class="z-act" data-cmd="Mark this reminder done: 3D PRINTING (id DDBA13AF-5841-4D5D-BAEA-8433336064EB)">✓ Done</button></div>
 <div class="x-row">6m tile edge <button type="button" class="z-act" data-cmd="Mark this reminder done: 6m tile edge (id 7359C2EA-DD0D-43CF-9094-24B35FB575C0)">✓ Done</button></div>
@@ -187,6 +193,12 @@
 <div class="x-row x-meta">+6 more in this list</div>
 </details>
 </div>
+<div class="card">
+<h2>Shared events — tap to confirm</h2>
+<p class="x-meta">Tap to let Zonkey know you're across it, or flag a problem (you'll be asked what's wrong, and Zonkey passes it on).</p>
+<div class="x-row"><span class="x-meta">Wed 5 Aug · All day</span> Process Payroll<br><button type="button" class="z-act" data-cmd="WFB: all good with Process Payroll (Wed 5 Aug)">✅ All good</button><button type="button" class="z-act" data-flag="1" data-label="Process Payroll (Wed 5 Aug)">⚠️ Flag an issue</button></div>
+<div class="x-row"><span class="x-meta">Sat 8 Aug · All day</span> AusPost Cut-off<br><button type="button" class="z-act" data-cmd="WFB: all good with AusPost Cut-off (Sat 8 Aug)">✅ All good</button><button type="button" class="z-act" data-flag="1" data-label="AusPost Cut-off (Sat 8 Aug)">⚠️ Flag an issue</button></div>
+</div>
 
     <footer>Generated automatically by OpenClaw · weekly-family-briefing</footer>
   </div>
@@ -204,7 +216,7 @@
     // tappable instead of permanently struck through) and old keys don't
     // accumulate forever.
     var SLUG = location.pathname.split("/")[1] || "page";
-    var STORE_KEY = "wfb-done:" + SLUG + ":2026-07-29T03:00:43Z";
+    var STORE_KEY = "wfb-done:" + SLUG + ":2026-08-05T03:00:46Z";
     try {
       for (var k = localStorage.length - 1; k >= 0; k--) {
         var kk = localStorage.key(k);
@@ -291,6 +303,25 @@
       rrows[r].appendChild(rb);
     }
 
+    // 1b) Re-time the greeting to the VIEWER's clock. The email is baked at fire
+    //    time (15:00 Sun / 13:00 Wed), but the mirror gets reopened whenever — so
+    //    "Afternoon Jake," should read "Evening Jake," at 9pm. html_render wraps
+    //    only the time word in [data-greet]; greetings without one ("Hey Kye,")
+    //    carry no span and are left alone.
+    //    NOTE: this must stay ABOVE the token block below, which `return`s early
+    //    for a token-less visitor — the greeting should be right for them too.
+    var greets = document.querySelectorAll("[data-greet]");
+    if (greets.length) {
+      var hr = new Date().getHours();
+      var word = hr < 12 ? "Morning" : (hr < 17 ? "Afternoon" : "Evening");
+      for (var g = 0; g < greets.length; g++) {
+        var cur = greets[g].textContent || "";
+        // Preserve the authored case: "Good morning" stays lowercase after "Good".
+        greets[g].textContent = (cur && cur[0] === cur[0].toLowerCase())
+          ? word.toLowerCase() : word;
+      }
+    }
+
     // 2) Drop the "view all on your briefing page →" pointer — redundant here,
     //    the full list ("Everything open") is on this same page.
     var va = document.querySelectorAll("[data-viewall]");
@@ -374,6 +405,83 @@
       input.addEventListener("keydown", function (ev) { if (ev.key === "Enter") submit(); });
       cancelBtn.addEventListener("click", function () { box.parentNode.removeChild(box); });
     }
+
+    // ── Live refresh ────────────────────────────────────────────────────────
+    // This page is static, published when the brief fired. Anything that changed
+    // afterwards — an item ticked off in Reminders, leave added mid-week — would
+    // otherwise stay wrong until the next brief. On open we ask the API for the
+    // current state and correct the page in place. Same bearer as the buttons, so
+    // it only ever returns this person's own data, and a failure is silent: the
+    // page simply stays as published.
+    function markRowDoneById(id) {
+      var hit = 0, i;
+      var acts = document.querySelectorAll(".z-act[data-cmd]");
+      for (i = 0; i < acts.length; i++) {
+        var cmd = acts[i].getAttribute("data-cmd") || "";
+        if (cmd.indexOf("(id " + id + ")") !== -1) {
+          if (!acts[i].disabled) { markDone(acts[i]); }
+          hit++;
+        }
+      }
+      var rows = document.querySelectorAll("[data-rcmd]");
+      for (i = 0; i < rows.length; i++) {
+        if ((rows[i].getAttribute("data-rcmd") || "").indexOf("(id " + id + ")") !== -1) {
+          rows[i].classList.add("z-row-done");
+          hit++;
+        }
+      }
+      return hit;
+    }
+
+    function showLiveNote(text) {
+      var meta = document.querySelector(".card .meta");
+      if (!meta) return;
+      var note = document.createElement("div");
+      note.className = "z-live";
+      note.textContent = text;
+      meta.parentNode.insertBefore(note, meta.nextSibling);
+    }
+
+    (function liveRefresh() {
+      var LIVE = "https://api.carlyle.me/z/brief/live";
+      fetch(LIVE, { headers: { "Authorization": "Bearer " + TOK } })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data || !data.ok) return;
+          var i, changed = 0;
+          var done = data.completed || [];
+          for (i = 0; i < done.length; i++) {
+            if (markRowDoneById(done[i].id)) changed++;
+          }
+          // Leave: compare the signature stamped at publish time with the current
+          // one. Rewriting the gantt strip in the browser would be fragile, so a
+          // changed week is reported as plain lines above it instead.
+          var sigEl = document.querySelector("[data-leave-sig]");
+          var sig = sigEl ? sigEl.getAttribute("data-leave-sig") : null;
+          var lines = data.leave_lines || [];
+          if (sig && data.leave_sig && sig !== data.leave_sig && lines.length) {
+            var box = document.createElement("div");
+            box.className = "z-live-leave";
+            var h = document.createElement("strong");
+            h.textContent = "Leave has changed since this brief was sent:";
+            box.appendChild(h);
+            for (i = 0; i < lines.length; i++) {
+              var p = document.createElement("div");
+              p.textContent = lines[i];
+              box.appendChild(p);
+            }
+            sigEl.parentNode.insertBefore(box, sigEl.nextSibling);
+            changed++;
+          }
+          if (changed) {
+            var t = new Date(data.checked || Date.now());
+            showLiveNote("Updated just now — " + changed + " change"
+              + (changed === 1 ? "" : "s") + " since this brief was sent ("
+              + t.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) + ").");
+          }
+        })
+        .catch(function () { /* offline or API down — leave the page as published */ });
+    })();
 
     document.addEventListener("click", function (e) {
       var btn = e.target.closest ? e.target.closest(".z-act") : null;
